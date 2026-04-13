@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+</head>
+<body>
+    <div id="one-div">
+        <h1>sestem</h1>
+        <p>sestem hash && slash</p>
+    </div>
+
+
+
+
+    <div id="two-div">
+        <input type="text" required name="" id="input" placeholder="title">
+        <div id="two-div-one">
+            <input type="number" onkeyup="onwriteinputs()"  id="price" placeholder="price" required class="input">
+            <input type="number" onkeyup="onwriteinputs()"  id="taxes" placeholder="taxes" class="input">
+            <input type="number" onkeyup="onwriteinputs()"  id="ads" placeholder="ads" class="input"> 
+            <input type="number" onkeyup="onwriteinputs()"  id="discount" placeholder="discount" class="input">
+           <span id ="total" >333333</span>
+        </div>
+        <!-- <input id="time" type="number" placeholder="time" class="in"> -->
+
+          <div id="two-div-two"> 
+            <input id="time" type="text" placeholder="time" class="in">
+            <input id="count" type="number" placeholder="count" class="in">
+            <input id="category" type="text" placeholder="category" class="in">
+           <button type="submit"  id="button-one" >create</button>
+        </div> 
+         
+
+    </div >
+    <div id="three-div">
+        <div id="three-div-one">
+            <input type="search" name="" onkeyup="searchdata(this.value)"  id="search" placeholder="search">
+            <div>
+                <button id="title"  onclick="moodsearchdata(this.id)">  search by title</button>
+                <span id="allpricebought"></span>
+                <button id="category" onclick="moodsearchdata(this.id)">search by name</button>
+            </div>
+            <button id="delete">delete All</button>
+            
+            
+        </div>
+        <div id="div" >
+            <table id="table">
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>time</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+               <tbody id="tbody" >
+               
+               
+                
+
+                 
+               </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="d.js"></script>
+
+    
+</body>
+</html>

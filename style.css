@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(46, 45, 45);
+    color:white;
+}
+#one-div{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+
+}
+#two-div{
+    margin: 20px 0 0 0;
+    /* background-color: red; */
+    text-align: center;
+    height: 400px;
+    
+}
+#two-div input{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin: 10px 10px 30px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    background-color: black;
+    color:white;
+    padding: 10px 0 10px 6px;
+}
+#two-div:has(input) input:hover{
+    transform: scale(1.010);
+}
+#two-div input::placeholder{
+    color: rgb(240, 237, 237);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#input{
+    width: 90%;
+
+}
+#two-div-two{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    /* height: 1000px; */
+
+}
+.in{
+    width: 90%;
+    margin: 20px 0;
+
+}
+#button-one{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+   
+    transition: 1s;
+    &:hover{
+        background-color: rgb(101, 29, 168);
+        letter-spacing: 2px;
+    }
+}
+
+.input{
+    width: 240px;
+}
+span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    background-color: red;
+    padding: 5px;
+    border-radius: 7px;
+}
+span::before{
+    content: 'totel:';
+}
+span::after{
+    content: ' $';
+}
+#three-div-one{
+    text-align: center;
+
+    #delete{
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    width: 90%;
+    color: white;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    margin-left: 50px;
+    
+    
+
+
+     }
+
+    
+    input{
+        width: 90%;
+        height: 40px;
+        background-color: black;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 0 10px 6px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-large;
+
+        
+        &::placeholder{
+            color: rgb(240, 237, 237);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            
+
+        }
+       
+        
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+
+        button{
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background-color: blueviolet;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            width: 400px;
+            color: white;
+            margin: 20px 0 10px 0;
+            cursor: pointer;
+            transition: 1s;
+            &:hover{
+        background-color: rgb(101, 29, 168);
+        letter-spacing: 2px;
+    }
+
+
+        }
+    }
+}
+#three-div-one:has(input) :is(input,button):hover{
+    transform: scale(1.010);
+}
+#div{
+    background-color: rgb(17, 14, 14);
+    margin: 0 10px 0 10px;
+    border-radius: 7px;
+    padding: 7px;
+}
+#table{
+     width: 100%;
+     margin-top: 20px;
+
+    th{
+       
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        letter-spacing: 3px;
+    }
+
+    
+   
+    td{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        letter-spacing: 3px;
+        vertical-align: bottom;
+        padding: 10px 0 0 0;
+        button{
+            width: 100px;
+            height: 30px;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+            background-color: blueviolet;
+            
+        }
+    }
+    
+}
+#three-div{
+    margin-top: 60px;
+}
+#allpricebought{
+    background-color: red;
+    &::before{
+        content: 'profits: ';
+    }
+}
